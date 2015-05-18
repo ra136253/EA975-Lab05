@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6QJakPe-EeSFnI-bVJ2wTg" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_6QJakfe-EeSFnI-bVJ2wTg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mqqcPe-EeSFnI-bVJ2wTg" name="Exemplar">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__68S0PfBEeSFnI-bVJ2wTg" name="Bloqueado" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9mr4kPe-EeSFnI-bVJ2wTg" name="Emprestimo" visibility="package" memberEnd="_9mr4kfe-EeSFnI-bVJ2wTg _9mr4lPe-EeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mr4kfe-EeSFnI-bVJ2wTg" name="usuario" type="_9mttwPe-EeSFnI-bVJ2wTg" association="_9mr4kPe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mr4kve-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mr4k_e-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mr4lPe-EeSFnI-bVJ2wTg" name="emprestimo" type="_9msfoPe-EeSFnI-bVJ2wTg" association="_9mr4kPe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mr4lfe-EeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mr4lve-EeSFnI-bVJ2wTg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9msfoPe-EeSFnI-bVJ2wTg" name="Emprestimo" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lC154Pe_EeSFnI-bVJ2wTg" name="DataEmprestimo" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yrHGYPe_EeSFnI-bVJ2wTg" name="DataDevolucao" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lSGL8PfBEeSFnI-bVJ2wTg" name="Reserva" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xuepkPfAEeSFnI-bVJ2wTg" name="gerarMulta"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bJsYkPfBEeSFnI-bVJ2wTg" name="DevolverExemplar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9msfofe-EeSFnI-bVJ2wTg" name="Professor" visibility="public">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9msfove-EeSFnI-bVJ2wTg" general="_9mttwPe-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mtGsPe-EeSFnI-bVJ2wTg" name="Tese">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9mtGsfe-EeSFnI-bVJ2wTg" general="_9muU1_e-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mtGsve-EeSFnI-bVJ2wTg" name="Terminal" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mttwPe-EeSFnI-bVJ2wTg" name="Usuario" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9mttwfe-EeSFnI-bVJ2wTg" name="Nome" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GSnt8Pe_EeSFnI-bVJ2wTg" name="numRegistro">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XK4rkPe_EeSFnI-bVJ2wTg" name="Instituto">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_X1rfkPfAEeSFnI-bVJ2wTg" name="Ativo" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mttwve-EeSFnI-bVJ2wTg" name="Funcionario">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9mttw_e-EeSFnI-bVJ2wTg" general="_9mttwPe-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9muU0Pe-EeSFnI-bVJ2wTg" name="Exemplares" memberEnd="_9muU0fe-EeSFnI-bVJ2wTg _9muU1Pe-EeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9muU0fe-EeSFnI-bVJ2wTg" name="exemplar" type="_9mqqcPe-EeSFnI-bVJ2wTg" aggregation="shared" association="_9muU0Pe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9muU0ve-EeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9muU0_e-EeSFnI-bVJ2wTg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9muU1Pe-EeSFnI-bVJ2wTg" name="biblioteca" type="_9mx_MPe-EeSFnI-bVJ2wTg" association="_9muU0Pe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9muU1fe-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9muU1ve-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9muU1_e-EeSFnI-bVJ2wTg" name="Publicacao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yJc44PfBEeSFnI-bVJ2wTg" name="Autor" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2JV14PfBEeSFnI-bVJ2wTg" name="DataPublicacao" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mu74Pe-EeSFnI-bVJ2wTg" name="Livro">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9mu74fe-EeSFnI-bVJ2wTg" general="_9muU1_e-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9mu74ve-EeSFnI-bVJ2wTg" name="Terminal" memberEnd="_9mu74_e-EeSFnI-bVJ2wTg _9mu75ve-EeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mu74_e-EeSFnI-bVJ2wTg" name="terminal" type="_9mtGsve-EeSFnI-bVJ2wTg" aggregation="shared" association="_9mu74ve-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mu75Pe-EeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mu75fe-EeSFnI-bVJ2wTg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mu75ve-EeSFnI-bVJ2wTg" name="biblioteca" type="_9mx_MPe-EeSFnI-bVJ2wTg" association="_9mu74ve-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mu75_e-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mu76Pe-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9mvi8Pe-EeSFnI-bVJ2wTg" name="Emprestimos" memberEnd="_9mvi8fe-EeSFnI-bVJ2wTg _9mvi9Pe-EeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mvi8fe-EeSFnI-bVJ2wTg" name="emprestimo" type="_9msfoPe-EeSFnI-bVJ2wTg" aggregation="shared" association="_9mvi8Pe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mvi8ve-EeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mvi8_e-EeSFnI-bVJ2wTg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mvi9Pe-EeSFnI-bVJ2wTg" name="biblioteca" type="_9mx_MPe-EeSFnI-bVJ2wTg" association="_9mvi8Pe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mvi9fe-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mvi9ve-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mwKAPe-EeSFnI-bVJ2wTg" name="Aluno">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9mwKAfe-EeSFnI-bVJ2wTg" general="_9mttwPe-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9mwKAve-EeSFnI-bVJ2wTg" name="Publicacoes" memberEnd="_9mwKA_e-EeSFnI-bVJ2wTg _9mwKBve-EeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mwKA_e-EeSFnI-bVJ2wTg" name="publicacao" type="_9muU1_e-EeSFnI-bVJ2wTg" aggregation="shared" association="_9mwKAve-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mwKBPe-EeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mwKBfe-EeSFnI-bVJ2wTg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mwKBve-EeSFnI-bVJ2wTg" name="biblioteca" type="_9mx_MPe-EeSFnI-bVJ2wTg" association="_9mwKAve-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mwKB_e-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mwKCPe-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9mwxEPe-EeSFnI-bVJ2wTg" name="Exemplar" memberEnd="_9mwxEfe-EeSFnI-bVJ2wTg _9mwxFPe-EeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mwxEfe-EeSFnI-bVJ2wTg" name="exemplar" type="_9mqqcPe-EeSFnI-bVJ2wTg" association="_9mwxEPe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mwxEve-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mwxE_e-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9mwxFPe-EeSFnI-bVJ2wTg" name="emprestimo" type="_9msfoPe-EeSFnI-bVJ2wTg" association="_9mwxEPe-EeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9mwxFfe-EeSFnI-bVJ2wTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9mwxFve-EeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mxYIPe-EeSFnI-bVJ2wTg" name="Manual">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9mxYIfe-EeSFnI-bVJ2wTg" general="_9muU1_e-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mxYIve-EeSFnI-bVJ2wTg" name="Periodico">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9mxYI_e-EeSFnI-bVJ2wTg" general="_9muU1_e-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9mx_MPe-EeSFnI-bVJ2wTg" name="Biblioteca"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hzGVgPfBEeSFnI-bVJ2wTg" name="Exempl" memberEnd="_hzGVgffBEeSFnI-bVJ2wTg _hzEgUPfBEeSFnI-bVJ2wTg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hzGVgffBEeSFnI-bVJ2wTg" name="publicacao" type="_9muU1_e-EeSFnI-bVJ2wTg" association="_hzGVgPfBEeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzGVgvfBEeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzGVg_fBEeSFnI-bVJ2wTg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hzEgUPfBEeSFnI-bVJ2wTg" name="exemplar" type="_9mqqcPe-EeSFnI-bVJ2wTg" association="_hzGVgPfBEeSFnI-bVJ2wTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzEgUffBEeSFnI-bVJ2wTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzEgUvfBEeSFnI-bVJ2wTg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dnpzUPfCEeSFnI-bVJ2wTg" name="Bibliotecario">
+    <generalization xmi:type="uml:Generalization" xmi:id="_fa2PQPfCEeSFnI-bVJ2wTg" general="_9mttwve-EeSFnI-bVJ2wTg"/>
+  </packagedElement>
+</uml:Model>
